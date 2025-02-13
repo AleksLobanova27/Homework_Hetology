@@ -2,18 +2,17 @@
 using namespace std;
 
 enum Season {
-    Январь = 1,
-    Февраль,
-    Март,
-    Апрель,
-    Май,
-    Июнь,
-    Июль,
-    Август,
-    Сентябрь,
-    Октябрь,
-    Ноябрь,
-    Декабрь
+    January =1,
+    February,
+    March,
+    April, May,
+    June,
+    July,
+    August,
+    September,
+    October, 
+    November,
+    December
 };
 int main()
 {
@@ -26,44 +25,43 @@ int main()
     while (snumber != 0) {
         if (snumber < 0 || snumber > 12) {
             cout << "Неправильный номер!\n";
-            continue;
         }
         else {
             switch (snumber) {
-            case  Январь:
+            case January :
                 cout << "Январь\n";
                 break;
-            case  Февраль:
+            case  February:
                 cout << "Февраль\n";
                 break;
-            case  Март:
+            case March:
                 cout << "Март\n";
                 break;
-            case  Апрель:
+            case April:
                 cout << "Апрель\n";
                 break;
-            case  Май:
+            case May:
                 cout << "Май\n";
                 break;
-            case  Июнь:
+            case June:
                 cout << "Июнь\n";
                 break;
-            case  Июль:
+            case July:
                 cout << "Июль\n";
                 break;
-            case  Август:
+            case August:
                 cout << "Август\n";
                 break;
-            case  Сентябрь:
+            case September:
                 cout << "Сентябрь\n";
                 break;
-            case  Октябрь:
+            case October:
                 cout << "Октябрь\n";
                 break;
-            case  Ноябрь:
+            case November:
                 cout << "Ноябрь\n";
                 break;
-            case  Декабрь:
+            case December:
                 cout << "Декабрь\n";
                 break;
 

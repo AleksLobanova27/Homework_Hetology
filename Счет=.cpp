@@ -2,16 +2,13 @@
 using namespace std;
 
 struct Score {
-    int number ;
-    string name ;
-    int balance ;
+    int number;
+    string name;
+    int balance;
 };
 
-void New_Score(Score* person) {
-    cout << "Введите новый баланс: ";
-    int bal;
-    cin >> bal;
-    person->balance = bal;
+void New_Score(Score* persona, int newbalance) {
+    persona->balance = newbalance;
 }
 
 int main()
@@ -27,7 +24,10 @@ int main()
     int bal;
     cin >> bal;
     Score person = { num,nam,bal };
-    New_Score(&person);
+    cout << "Введите новый баланс: ";
+    int newbalance;
+    cin >> newbalance;
+    New_Score(&person, newbalance);
     cout << "Ваш счёт: " << person.name << ", " << person.number << ", " << person.balance << endl;
 }
 

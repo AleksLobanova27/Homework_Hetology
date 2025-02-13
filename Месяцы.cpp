@@ -26,7 +26,7 @@ int main()
     while (snumber != 0) {
         if (snumber < 0 || snumber > 12) {
             cout << "Неправильный номер!\n";
-
+            continue;
         }
         else {
             switch (snumber) {
